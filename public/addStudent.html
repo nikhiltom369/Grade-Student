@@ -89,9 +89,10 @@
                             <div class="mb-4">
                                 <label for="contact_details" class="form-label fw-bold">Contact Details <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="contact_details" name="contact_details" 
-                                    required placeholder="Email or Phone">
+                                    required pattern="^([^@]+|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$" 
+                                    placeholder="Email or Phone">
                                 <div class="invalid-feedback">
-                                    Contact details are required.
+                                    Please enter a valid phone number or a complete email address.
                                 </div>
                             </div>
 
